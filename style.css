@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    
+}
+header{
+    /* width: 100%; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* padding-top: 10px;
+   padding-right: 5%; */
+   padding: 1% 5%;
+   background-color: #D0BAC8;  
+}
+.logo{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo > i{
+    color: black;
+    font-size: 50px;
+
+}
+.store{
+    display: flex;
+    flex-direction: column;
+}
+.store > h1{
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+.store  > span{
+ /* rotate: -30deg; */
+font-family:Arial, Helvetica, sans-serif;
+font-size: 25px;
+padding-left: 30%;
+color: #AF6653;
+font-weight: 600;
+}
+
+.hading1{
+    display: flex;
+    gap: 30px;
+}
+.hading1 > h2{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.hading1 > h2 > span{
+    color:#AF6653;
+  
+}
+.hading2 > h3{
+    padding-left: 20px;
+}
+.hading2 > h4{
+    padding-right: 10px ;
+    font-size: 20px;
+    
+}
+.hading2 > i{
+    display: none;
+}
+
+/* ======================= section2========== */
+
+.section2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(back-image.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6% 5%;
+   
+   
+}
+.sec2-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1 > p{
+    font-size: 20px;
+    padding: 1% 7%;
+}
+.content1 > h1{
+    font-size: 100px;
+    line-height: 1;
+}
+
+.content1 > span{
+    font-size: 50px;
+    line-height: 1;
+    padding-left: 40%;
+    color: #AF6653;
+}
+
+.content2 > p{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 0.5;
+}
+.content2 > h1{
+    font-size: 50px;
+}
+.content2 > h2{
+    font-size: 20px;
+     line-height: 0.5;
+}
+.border{
+    margin: 10% 0;
+    border:  1px solid black ;
+}
+
+.content2 > span{
+    font-size: 100px;
+    line-height: 0.8;
+    color:#AF6653;
+}
+.border2{
+    margin: 10% 0;
+    border: 1px solid black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 9% 1%;
+    align-items: center;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+.footer-left > i{
+    font-size: 30px;
+}
+.location > a{
+    font-size: 15px;
+    color: rgb(19, 16, 16);
+}
+
+.footer-right > i{
+    font-size: 20px;
+    color: #AF6653;
+}
+
+/* ====================responsive============ */
+
+
+@media(max-width:600px){
+    body{
+        overflow: hidden;
+    }
+    
+
+    .store{
+        display: none;
+    }
+    .hading1{
+        display: none;
+    }
+    .hading2 > h3,h4{
+        display: none;
+    }
+    .hading2> i{
+        display: block;
+        font-size: 30px;
+    }
+
+    .sec2-content{
+        /* display: flex;
+        flex-direction: column; */
+        padding: 40px 0;
+    }
+    .content1> p{
+        display: none; 
+    }
+
+    .content1 > h1{
+        font-size: 45px;
+    }
+    .content1> span{
+        font-size: 20px;
+        color: rgb(210, 101, 101);
+    }
+
+    .content2 > p{
+        display: none;
+
+    }
+    .content2 > h1{
+        display: none;
+
+    }
+    .content2 > h2{
+        display: none;
+
+    }
+   .content2 > span{
+    font-size: 40px;
+ 
+   }
+   footer{
+    padding: 70% 0;
+   }
+
+   .footer-right > i{
+    color: black;
+   }
+}
